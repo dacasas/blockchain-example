@@ -106,12 +106,17 @@ class Miner extends Component {
     clearInterval(interval)
     this.props.onFinishMine()
   }
+  infiniteMine = async () => {
+    await this.mine()
+    this.infiniteMine()
+  }
   render() {
     const { mineDuration, durations } = this.state
     return (
       <div>
         <h1>Miner</h1>
         <button onClick={this.mine} disabled={this.state.mining}>Mine</button>
+        <button onClick={this.infiniteMine} disabled={this.state.mining}>Infinite Mine</button>
         <p>Mine duration: {mineDuration} ms</p>
         <h2>Durations</h2>
         <ol>
