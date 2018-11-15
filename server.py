@@ -48,12 +48,14 @@ def get_blocks():
     block_index = str(block.index)
     block_timestamp = str(block.timestamp)
     block_data = str(block.data)
+    block_previous_hash = str(block.previous_hash)
     block_hash = block.hash
     chain_to_send.append({
       "index": block_index,
       "timestamp": block_timestamp,
       "data": block_data,
-      "hash": block_hash
+      "hash": block_hash,
+      "previous_hash": block_previous_hash
     })
   # Send our chain to whomever requested it
   chain_to_send = json.dumps(chain_to_send)
