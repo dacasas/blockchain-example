@@ -1,5 +1,7 @@
-# blockchain-example
-Little example of a blockchain architecture
+
+# BlockChain Example
+
+Pequeño ejemplo de una arquitectura BlockChain
 
 Basado en el ejemplo desarrollado por Gerald Nash ([parte 1](https://medium.com/crypto-currently/lets-build-the-tiniest-blockchain-e70965a248b), [parte 2](https://medium.com/crypto-currently/lets-make-the-tiniest-blockchain-bigger-ac360a328f4d)).
 
